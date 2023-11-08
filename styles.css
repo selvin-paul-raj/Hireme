@@ -1,0 +1,128 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-wrap: wrap;
+    text-indent: 10px;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+  }
+  .logo{
+    width: 200px;
+    aspect-ratio: 5/5;
+    filter: brightness(100px);
+    filter: contrast(100px);
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0); /* Semi-transparent black background */
+  color:black;
+  padding: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, .2);
+  backdrop-filter: blur(18px);
+  z-index: 999;
+  }
+  
+  h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
+  }
+  h2{
+    font-size: 2rem;
+    padding: 10px;
+  }
+  article {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 20px 18px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    outline: none;
+  }
+  
+  article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  article:hover {
+    transform: scale(1.05);
+  }
+  
+  ul {
+    list-style:inside;
+    padding-left: 20px;
+  }
+  li{
+    padding: 10px;
+  }
+  hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  /* Responsive design using media queries */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 1.5em;
+    }
+  
+    main {
+      padding: 10px;
+    }
+    h2{
+        font-size: 1.4rem;
+        text-wrap: wrap;
+    }
+  
+    article {
+      padding: 10px;
+    }
+    .logo{
+        width: 150px;
+        
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(0, 20px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
